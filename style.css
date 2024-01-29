@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "futurak";
+  src: url("https://staging.tossdown.site/assets/theme_one/fonts/futurak/futurak.ttf");
+}
+
+* {
+  font-family: futurak, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+a:hover,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-flex {
+  display: flex;
+  flex-flow: row;
+  background-color: black;
+  align-items: center;
+  /* width: max-content; */
+  /* max-height: 150%; */
+  /* min-height: 100%; */
+}
+
+nav figure {
+  position: relative;
+  top: 5px;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+  position: relative;
+  /* top: 0px; */
+  left: 290px;
+  height: fit-content;
+  color: white;
+}
+
+nav ul > li {
+  list-style-type: none;
+  position: relative;
+  padding: 10px;
+}
+
+nav ul li.border-radius-white {
+  border-radius: 35px;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+
+nav ul li.border-readius-background-color-red {
+  background-color: red;
+  border-radius: 31px;
+}
+
+nav ul li.border-readius-background-color-red {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li.border-readius-background-color-red > a > span {
+  padding-right: 5px;
+}
+
+nav ul li.border-readius-background-color-red > a:active img {
+  box-shadow: none;
+}
+
+img#Arrow-order-online {
+  border-radius: 50%;
+  width: 25px;
+  /* height: ; */
+  /* padding-left: 2px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
