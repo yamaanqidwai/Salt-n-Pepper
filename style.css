@@ -114,3 +114,74 @@ img#Arrow-order-online {
   font-weight: 200;
   margin-bottom: 8px;
 }
+
+
+/***** Product brands *****/
+
+
+div.product-brands-ul-lists {
+  display: flex;
+  flex-flow: row nowrap;
+justify-content: center;
+text-align: center;
+}
+
+div.product-brands-ul-lists a {
+  width: 100%;
+}
+
+
+div.product-brands-ul-lists li {
+list-style-type: none;
+}
+div.product-brands-ul-lists figure {
+width: 280px;
+height: 140px;
+background-color: white;
+display: flex;
+align-items: center;
+}
+
+div.button-for-logo-mini {
+  padding: 18px;
+  border: 1px solid white;
+  border-radius: 25%;
+}
+
+
+/* 
+div.product-brands ul {
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  width: fit-content; 
+  justify-content: center;
+  padding: 0;
+}
+
+div.product-brands li {
+  background-color: white;
+  padding: 0 15px;
+  list-style-type: none;
+}
+
+div.logo-mini {
+  background-color: white;
+  padding: 0px 15px;
+  border-radius: 0px;
+}
+
+div.logo-mini figure {
+  margin: 0;
+  
+}
+
+div.logo-mini img {
+  padding: 0px 19px;
+    border-radius: 3px;
+    background-color: white;
+    width: 380px;
+} */
+
