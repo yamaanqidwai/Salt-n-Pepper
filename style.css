@@ -14,6 +14,8 @@
 * {
   font-style: normal;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .Futurak-font-400-usage {
@@ -41,6 +43,11 @@ a:focus {
   flex-flow: row;
   background-color: black;
   align-items: center;
+  height: 92px;
+  max-width: 1140px;
+  padding: 8px 0px 8px 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav figure {
@@ -54,9 +61,10 @@ nav ul {
   align-items: baseline;
   position: relative;
   /* top: 0px; */
-  left: 290px;
+  /* left: 290px; */
   height: fit-content;
   color: white;
+  margin-left: auto;
 }
 
 nav ul > li {
@@ -101,7 +109,7 @@ img#Arrow-order-online {
 
 .section-1 {
   /* display: flex; */
-  padding: 0px 15px;
+  padding: 70px 15px 160px 15px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -122,36 +130,35 @@ div.parent-container {
 
 /***** Product brands *****/
 
-div.product-brands-ul-lists {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  /* text-align: center; */
-  /* margin-left: auto;
-  margin-right  : auto; */
-  
-}
-
-div.product-brands-ul-lists a {
-  width: 100%;
-}
-
-div.product-brands-ul-lists li {
+div.parent-container-for-ul {
+  background-color: black;
+  padding-top: 40px !important;
   list-style-type: none;
-}
-div.product-brands-ul-lists figure {
-  width: 280px;
-  height: 140px;
-  background-color: white;
   display: flex;
-  align-items: center;
-  border-radius: 5px;
+  justify-content: center;
+  margin: 0px -15px;
 }
 
-div.button-for-logo-mini {
-  width: 174px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+div.parent-container-for-ul ul {
+  display: flex;
+}
+
+div.parent-container-for-ul li {
+  text-align: center;
+  list-style-type: none;
+  padding: 0 15px;
+}
+
+div.order-now-button-border-radius-50px a:hover,
+div.order-now-button-border-radius-50px a:link,
+div.order-now-button-border-radius-50px a:visited,
+div.order-now-button-border-radius-50px a:active,
+div.order-now-button-border-radius-50px a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.order-now-button-border-radius-50px {
   border-radius: 50px;
   font-style: normal;
   font-weight: 500;
@@ -160,60 +167,122 @@ div.button-for-logo-mini {
   color: #ffffff;
   margin: auto;
   margin-top: 24px;
+  border: 1px solid white;
+  width: 174px;
+  height: 50px;
 }
 
-div.product-brands ul {
-  padding-left: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  max-width: 1140px;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* 
-
-div.product-brands-ul-lists li {
-  padding: 0 15px;
-}
-
-div.logo-mini {
+.img-figure-white {
+  /* background-color: #ffffff; */
+  width: 280px;
+  height: 140px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-}
-
-div.logo-mini figure {
+  padding: 0;
   margin: 0;
-  height: 140px;
-  width: 280px;
-  background-color: white;
 }
 
-div.logo-mini a {
-  background-color: white;
-  width: 280px;
-  height: 140px;
-}
-
-div.logo-mini a > img {
-  width: 100%;
-  object-fit: contain;
+.img-figure-white a {
+  padding: 0;
+  margin: 0;
+  display: block;
   height: 100%;
+  width: 100%;
+}
+
+.img-figure-white img {
+  box-sizing: border-box;
+  object-fit: contain;
+  /* duo of above 2 properties solved 50% of the problem */
+  width: 100%;
+  display: block;
+  height: 100%;
+  /* This combo completely solved the problem */
   background-color: #ffff;
   padding: 0px 19px;
-  border-radius: 3px
+  border-radius: 3px;
 }
 
-.product_brand_list ul li {
-  width: 280px !important;
+/***** Section 2*****/
+
+.section-2 {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 70px;
 }
 
+#section-2-intro {
+  text-align: center;
+}
+
+#right-most-image {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+
+.section-2 h2 .Futurak-font-400-usage {
+  font-size: 48px;
+}
+
+.section-2 h2 {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+p.size-18px-weight-300 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+
+.section-2-container-1 img {
+  box-sizing: border-box;
+}
+
+.section-2-container-1 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.text-red-uppercase {
+  font-family: "apercu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.48em;
+  text-transform: uppercase;
+  color: #ed1c24;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.adress-secion-2 {
+  font-family: "Apercu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+.list-style-phone {
+  /* list-style: url("Images/Section 2/phone-square-solid.svg"); */
+  width: 20px;
+  height: 20px;
+  /* background-color: #ffffff; */
+  /* border-radius: 50%; */
+  background-image: url("Images/Section 2/Grey background.png");
+}
+
+
+
+/* 
+phone call symbol 
+\f095;
+
+Arrow symbol
+\f061
 */
